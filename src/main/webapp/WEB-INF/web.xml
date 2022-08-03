@@ -14,29 +14,6 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 	<display-name>Getting Started with Spring</display-name>
 
-	<env-entry>
-		<env-entry-name>userName</env-entry-name>
-		<env-entry-type>java.lang.String</env-entry-type>
-		<env-entry-value>Vinod</env-entry-value>
-	</env-entry>
 	
-	<env-entry>
-	   	<env-entry-name>java:global/helloString</env-entry-name>
-	   	<env-entry-type>java.lang.String</env-entry-type>
-	   	<env-entry-value>Hello World</env-entry-value>
-   </env-entry>
-   
-   
-   <env-entry>
-	   	<env-entry-name>java:global/myString</env-entry-name>
-	   	<env-entry-type>java.lang.String</env-entry-type>
-	   	<env-entry-value>My String</env-entry-value>
-   </env-entry>
-   
-   <env-entry>
-	   	<env-entry-name>hello</env-entry-name>
-	   	<env-entry-type>java.lang.String</env-entry-type>
-	   	<env-entry-value>Hello Module</env-entry-value>
-   </env-entry>
 
 </web-app>
