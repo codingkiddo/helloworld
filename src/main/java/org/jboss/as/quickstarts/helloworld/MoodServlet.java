@@ -13,6 +13,8 @@ package org.jboss.as.quickstarts.helloworld;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -82,6 +84,16 @@ public class MoodServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        
+        
+        try {
+			System.out.println(new InitialContext().lookup("java:global/TEST-NAME"));
+		} catch (NamingException e) {
+			System.out.println("&&&&&&: " + e.getMessage());
+			e.printStackTrace();
+		}
+        
+        
         processRequest(request, response);
     }
 
